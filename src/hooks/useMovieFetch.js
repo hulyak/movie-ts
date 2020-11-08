@@ -3,7 +3,7 @@ import API from '../API';
 // Helpers
 import { isPersistedState } from '../helpers';
 
-export const useMovieFetch = movieId => {
+export const useMovieFetch  = movieId => {
   const [state, setState] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
