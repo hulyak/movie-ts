@@ -7,10 +7,11 @@ import { IMAGE_BASE_URL, POSTER_SIZE } from '../../config';
 import NoImage from '../../images/no_image.jpg';
 // Styles
 import { Wrapper, Content, Text } from './MovieInfo.styles';
-
 // Types
+import { MovieState } from '../../hooks/useMovieFetch';
+
 type Props = {
-  movie: string;
+  movie: MovieState;
 }
 
 const MovieInfo :React.FC<Props> = ({ movie }) => (
